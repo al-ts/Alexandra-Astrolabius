@@ -4,7 +4,8 @@
 
 body{
 
-	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	/*font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+	font-family: 'Raleway', sans-serif;
 	color: white;
 	 background-color: black;
 }
@@ -13,6 +14,13 @@ body{
 
 
 /*MENU*/
+
+#astrolabiusAl{
+	width: 100%;
+	margin-top: 85%;
+	border: 1px solid;
+	border-color: #b6b6b6;
+}
 .sidenav {
   height: 100%;
   width: 0;
@@ -26,6 +34,29 @@ body{
   padding-top: 90px;
 
 }
+.sidenav img{
+
+	width: 50%;
+	margin-left: 25%;
+
+}
+.sidenav p{
+
+	text-align: center;
+	color: #b6b6b6;
+
+ }
+
+.sidenav h1{
+
+	font-size: 27px;
+	color: #b3b3b3;
+	text-align: center;
+	font-family: 'Sacramento', cursive;
+	font-weight: lighter;
+	width: 100%;
+	margin: 0 0 0 3%;
+ }
 
 .sidenav a {
 
@@ -38,9 +69,60 @@ body{
 	margin-top: 30px;
 	text-align: center;
 
+}
+
+.contactoMenu{
+
+	display: block;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	padding: 0;
+	top:30%;
 
 }
 
+.proyectosMenu{
+
+	display: block;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	padding: 0;
+	top:23%;
+
+}
+
+.bandcamp{
+
+	display: block;
+	overflow: hidden;
+	position: absolute;
+	top:89.5%;
+	margin-left: 35%;
+
+}
+
+.otros{
+
+	display: block;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	padding: 0;
+	top:83%;
+
+}
+.proyectosMenuOtr{
+
+	display: block;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	padding: 0;
+	top:83%;
+
+}
 .sidenav a:hover {
   color: #f1f1f1;
 }
@@ -55,12 +137,60 @@ body{
 
 }
 
+.frm {
+
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+	float: right;
+	background-color: rgba(10, 10, 10, 0.7);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 90px;
+
+}
+.frm a{
+
+	font-size: 35px;
+	color: #818181;
+	padding-right: 5%;
+	float: right;
+
+}
+
+.openCont{
+
+	float: right;
+	top: 5%;
+	left: 80%;
+	display: block;
+	width: 15%;
+	position: absolute;
+
+}
+
+.openCont p{ font-size: 20px; }
+
 #main .menuBar{
 
 font-size:30px;
 cursor:pointer;
 
 }
+#main .openCont{
+
+font-size:30px;
+cursor:pointer;
+
+}
+#main:hover .openCont{
+
+color: #818181;
+
+}
+
 #main:hover .menuBar{
 
 color: #818181;
@@ -71,6 +201,7 @@ color: #818181;
 
   transition: margin-left .5s;
   padding: 16px;
+
 }
 
 @media screen and (max-height: 450px) {
@@ -81,9 +212,12 @@ color: #818181;
 /*FIN MENU*/
 
 #contenido {
+
 	position: relative;
 	margin-bottom: 0;
-	width: 60%;
+	width: 100%;
+	margin-top: 10%;
+
 }
 
 .AstroBeni{
@@ -97,10 +231,11 @@ color: #818181;
 
 }
 .over{
+
 	position: absolute;
-	text-align: center;
-	top: 50%;
-  left: 15%;
+	text-align: justify;
+	top: 10%;
+  left: 49%;
   opacity: 0;
 	transform:  translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
@@ -108,16 +243,27 @@ color: #818181;
 	text-align: center;
 
 }
-#contenido:hover .AstroBeni{
-	opacity: .7;
-}
-#contenido:hover .over{
-	opacity: 1;
-}
-.AstrolabiusTxt{
+
+#txtAstro{
+
 	position: relative;
+	font-family: 'Sacramento', cursive;
+	font-size: 35px;
+
+}
+.AstroBeni:hover{	opacity: .7; }
+
+#main:hover .over{ opacity: 1; }
+
+.AstrolabiusTxt{
+
+	position: relative;
+	display: block;
 	font-size: 10px;
 	margin-bottom: 0;
+	width: 100%;
+	margin-top: 10%;
+
 }
 .beni{
 
@@ -129,8 +275,8 @@ color: #818181;
 /*	margin-top: 90%;*/
 	width:50%;
 	height: 50%;
-}
 
+}
 
 /*BOTONES PROYECTO*/
 
@@ -148,6 +294,9 @@ color: #818181;
 	background-color: black;
 	color: white;
 	opacity: 0.6;
+	border-bottom: 1px solid;
+	border-color: white;
+
 }
 
 .showProyectos:after {
@@ -155,11 +304,10 @@ color: #818181;
  content: '\002B';/* Unicode character for "plus" sign (+) */
  font-weight: bold;
  margin-left: 5px;
+
 }
 
-.active:after {
-content: "\2212"; /* Unicode character for "minus" sign (-) */
-}
+.active:after { content: "\2212"; /* Unicode character for "minus" sign (-) */ }
 
 /*STORM*/
 
