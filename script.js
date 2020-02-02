@@ -9,6 +9,16 @@ function closeNav() {
   document.getElementById("main").style.marginLeft= "0";
 }
 
+function openNav1() {
+  document.getElementById("formulario").style.width = "100%";
+  document.getElementById("main").style.marginLeft = "50px";
+}
+
+function closeNav1() {
+  document.getElementById("formulario").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+
 /////// SLIDER
 
 var slideIndex = 1;
