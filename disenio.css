@@ -16,8 +16,8 @@ body{
 /*MENU*/
 
 #astrolabiusAl{
-	width: 100%;
-	margin-top: 85%;
+	width: 95%;
+	margin-top: 55%;
 	border: 1px solid;
 	border-color: #b6b6b6;
 }
@@ -98,7 +98,7 @@ body{
 	display: block;
 	overflow: hidden;
 	position: absolute;
-	top:89.5%;
+	top:68.5%;
 	margin-left: 35%;
 
 }
@@ -110,7 +110,7 @@ body{
 	position: absolute;
 	width: 100%;
 	padding: 0;
-	top:83%;
+	top:63%;
 
 }
 .proyectosMenuOtr{
@@ -120,7 +120,7 @@ body{
 	position: absolute;
 	width: 100%;
 	padding: 0;
-	top:83%;
+	top:63%;
 
 }
 .sidenav a:hover {
@@ -166,7 +166,7 @@ body{
 	top: 5%;
 	left: 80%;
 	display: block;
-	width: 15%;
+	width: 8%;
 	position: absolute;
 
 }
@@ -626,7 +626,7 @@ input[type=submit]:hover {
    bottom: 0;
    width: 100%;
    color: white;
-	 opacity: 0.1;
+   opacity: 0.2;
    text-align: center;
 }
 a{
