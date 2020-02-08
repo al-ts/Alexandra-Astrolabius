@@ -79,27 +79,6 @@ body{
 
 }
 
-.contactoMenu{
-
-	display: block;
-	overflow: hidden;
-	position: absolute;
-	width: 100%;
-	padding: 0;
-	top:30%;
-
-}
-
-.proyectosMenu{
-
-	display: block;
-	overflow: hidden;
-	position: absolute;
-	width: 100%;
-	padding: 0;
-	top:23%;
-
-}
 
 .bandcamp{
 
@@ -115,22 +94,12 @@ body{
 
 	display: block;
 	overflow: hidden;
-	position: absolute;
 	width: 100%;
 	padding: 0;
 	top:72%;
 
 }
-.proyectosMenuOtr{
 
-	display: block;
-	overflow: hidden;
-	position: absolute;
-	width: 100%;
-	padding: 0;
-	top:68%;
-
-}
 .sidenav a:hover {
   color: #f1f1f1;
 }
