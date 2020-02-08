@@ -145,22 +145,18 @@ body{
 
 }
 
-#main .menuBar{
 
-font-size:30px;
-cursor:pointer;
-
-}
 #main .menuBar a{
 
-	font-size: 18px;
-	color:#818181;
+	font-size: 30px;
+	color:#9b97aa;
 	margin-left: 3%;
+	cursor: pointer;
 }
 
-#main:hover .menuBar{
+#main .menuBar:hover {
 
-color: #818181;
+color: #bfbbcb;
 
 }
 
@@ -246,7 +242,7 @@ color: #818181;
 	font-size: 10px;
 	margin-bottom: 0;
 	width: 70%;
-
+	margin-left: 0;
 
 }
 
@@ -374,9 +370,11 @@ h2{
 
 	text-align: center;
 	display: block;
-	margin-top: 5%;
-	width: 50%;
-	margin-left: 25%;
+	width: 12%;
+	margin-left: 88%;
+	color: #726d7f;
+	text-decoration: overline;
+	font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -480,12 +478,6 @@ li{
 	.over{ left: 55%; width: 100%;}
 
 
-	#main .menuBar a{
-
-		font-size:10px;
-		margin-left: 2%;
-
-	}
 
 	#txtAstro1{
 
@@ -520,12 +512,7 @@ li{
 	.slideshow-continer { width: 60%; }
 	#txtAstro{ font-size: 25px; }
 	.over{ left: 55%; }
-	#main .menuBar a{
 
-		font-size:10px;
-		margin-left: 2%;
-
-	}
 
 	#txtAstro1{
 
@@ -551,5 +538,6 @@ li{
 		}
 		.otros{ top: 78%;}
 		.bandcamp{ top: 83%;}
+		h2{ margin-left:68%; font-size: 15px;}
 
 }
