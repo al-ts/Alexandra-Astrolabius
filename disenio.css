@@ -82,11 +82,10 @@ body{
  	color: #818181;
   display: block;
   transition: 0.3s;
-	margin-top: 1%;
+	margin-top:  2%;
 	text-align: center;
 
 }
-
 
 .bandcamp{
 
@@ -119,11 +118,12 @@ body{
 .sidenav .closebtn {
 
   position: absolute;
-  top: 0;
+	display: block;
+  top: 12%;
   right: 25px;
-  font-size: 36px;
+  font-size: 33px;
   margin-left: 50px;
-
+	
 }
 #main .menuBar {
 
