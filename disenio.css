@@ -35,7 +35,7 @@ body{
 
 #astrolabiusAl{
 	width: 95%;
-	margin-top: 35%;
+	margin-top: 16%;
 
 }
 #astrolabiusAl p{ text-align: justify;}
@@ -178,7 +178,7 @@ cursor: pointer;
 
 	margin-bottom: 0;
 	width: 100%;
-	margin-top: 10%;
+	margin-top: 20%;
 	height: auto;
 
 }
@@ -507,6 +507,9 @@ li{
 		margin-right: 10%;
 
 		}
+
+		.sidenav .closebtn { top: 10%; }
+
 }
 @media only screen and (max-width:500px) {
   /* For mobile phones: */
@@ -555,6 +558,7 @@ li{
 			font-size: 10px;
 		}
 		#main .menuBar a{ font-size: 14px; }
-		#main .menuBar{ width:35%;}
+		#main .menuBar{ width:35 }
+		.sidenav .closebtn { top: 10%; }
 
 }
