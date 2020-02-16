@@ -482,7 +482,7 @@ li{
 		font-size: 25px;
 		width: 100%;
 		margin-right: 42%;
-		margin-top: 58%;
+		margin-top: 48%;
 
 	}
 
@@ -490,6 +490,7 @@ li{
 
 		width: 50%;
 		margin-left: 20%;
+		margin-top: 30%;
 
 	}
 
@@ -508,7 +509,7 @@ li{
 
 		}
 
-		.sidenav .closebtn { top: 10%; }
+		.sidenav .closebtn { top: 12%; }
 
 }
 @media only screen and (max-width:500px) {
@@ -529,7 +530,7 @@ li{
 		font-size: 25px;
 		width: 100%;
 		margin-right: 42%;
-		margin-top: 55%;
+		margin-top: 48%;
 
 	}
 
@@ -537,6 +538,7 @@ li{
 
 		width: 50%;
 		margin-left: 20%;
+		margin-top: 30%;
 
 	}
 
@@ -559,6 +561,6 @@ li{
 		}
 		#main .menuBar a{ font-size: 14px; }
 		#main .menuBar{ width:35 }
-		.sidenav .closebtn { top: 10%; }
+		.sidenav .closebtn { top: 12%; }
 
 }
