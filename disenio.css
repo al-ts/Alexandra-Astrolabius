@@ -12,33 +12,31 @@ body{
  	margin: 0;
 }
 
-#contenedor1 {
+#contenedor {
 
 	background-image: url("material/fnd.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-	width: 99%; margin:0 auto;
+	width: 100%; margin:0 auto;
 	position: absolute;
+	animation-name: bkGrnd;
+	animation-duration: 1s;
+	animation-timing-function: ease;
 
 }
-#contenedor {
-
-  height: 100%;
-	width: 99%; margin:0 auto;
-	position: absolute;
-
+@keyframes bkGrnd {
+  from {width: 95%;}
+  to {width: 100%;}
 }
-
 /*MENU*/
 
 #astrolabiusAl{
 	width: 95%;
-	margin-top: 16%;
+	margin-top: 35%;
 
 }
-#astrolabiusAl p{ text-align: justify;}
 .sidenav {
 
   height: 95%;
@@ -52,7 +50,7 @@ body{
 }
 .sidenav img{
 
-	width: 80%;
+	width: 50%;
 	margin-left: 10%;
 
 }
@@ -82,10 +80,11 @@ body{
  	color: #818181;
   display: block;
   transition: 0.3s;
-	margin-top:  2%;
+	margin-top: 1%;
 	text-align: center;
 
 }
+
 
 .bandcamp{
 
@@ -118,24 +117,13 @@ body{
 .sidenav .closebtn {
 
   position: absolute;
-	display: block;
-  top: 12%;
+  top: 0;
   right: 25px;
-  font-size: 33px;
+  font-size: 36px;
   margin-left: 50px;
 
 }
-#main .menuBar {
 
-	text-align:center;
-	width:18%;
-	display:block;
-	margin-top:1%;
-	background-color:#272727;
-	opacity: 0.9;
-	padding: 1%;
-
-}
 
 #main .menuBar a{
 
@@ -143,10 +131,9 @@ body{
 	color:#9b97aa;
 	margin-left: 3%;
 	cursor: pointer;
-	margin: 5%;
  }
 
-#main .menuBar a:hover {
+#main .menuBar:hover {
 
 color: #bfbbcb;
 cursor: pointer;
@@ -178,7 +165,7 @@ cursor: pointer;
 
 	margin-bottom: 0;
 	width: 100%;
-	margin-top: 20%;
+	margin-top: 10%;
 	height: auto;
 
 }
@@ -198,25 +185,27 @@ cursor: pointer;
 
 	position: relative;
 	display: block;
-	opacity: 1;
 	width:45%;
 	height:auto;
-	transition: .5s ease;
-	backface-visibility: hidden;
-	margin-top: 0;
+	animation-name: main;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+}
 
+@keyframes main {
+  from {margin-top: 25%;}
+  to {margin-top: 8%;}
 }
 .AstroBeni:hover{	opacity: .7; cursor: pointer; }
-#main1:hover .over{ opacity: 1; }
-
 #txtAstro1{
 
 	position: relative;
 	font-family: 'Sacramento', cursive;
 	font-size: 45px;
 	float: right;
-	margin-right: 100%;
-	width: 100%;
+	margin-right: 110%;
+	margin-top: 1%;
+	width: 50%;
 }
 
 
@@ -226,18 +215,15 @@ cursor: pointer;
 
 	position: relative;
 	font-family: 'Sacramento', cursive;
-	font-size: 35px;
+	font-size:2em;
 	margin-left: 1%;
 	margin-bottom: 5%;
 
 }
 
-
-#main:hover .over{ opacity: 1; }
-
 .AstrolabiusTxt{
 
-	font-size: 14px;
+	font-size: 10px;
 	margin: 0;
 	width: 70%;
 
@@ -245,18 +231,23 @@ cursor: pointer;
 
 .over{
 
-	position: absolute;
+	position: relative;
+	display: block;
 	text-align: justify;
-  left: 49%;
-  opacity: 0;
-	transform:  translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-  transition: .5s ease;
-	text-align: center;
-
-
+	font-size: 2em;
+	width: 110%;
+	height: auto;
+  left: 39%;
+	top:0;
+	animation-name: ovr;
+	animation-duration: 1s;
+	animation-timing-function: ease;
 }
-
+@keyframes ovr {
+  from {left: 2%;	}
+  to {left: 39%;}
+}
+.over:hover{ cursor: pointer;}
 .beni{
 
 	font-size: 12px;
@@ -341,7 +332,7 @@ cursor: pointer;
 	height: auto;
 	overflow:hidden;
 	float:right;
-	top:10%;
+	top:30%;
 	text-align: justify;
 	font-size: 18px;
 	padding: 1%;
@@ -383,7 +374,6 @@ h2{
    color: white;
 	 opacity: 0.2;
    text-align: center;
-	 font-size: 12px;
 }
 
 /* BONUS TACK */
@@ -406,7 +396,7 @@ h2{
 .column {
   -ms-flex: 50%; /* IE 10 */
   flex: 50%;
-  padding: 0 2px;
+  padding: 0 4px;
 
 }
 
@@ -472,15 +462,16 @@ li{
 		width: 100%;
 	}
 	.proyectos{ 	margin-left: 0; }
-	.over{ left: 55%; margin-top: 5%; width:52%; }
+	.over{ left: 55%; margin-top: 5%; }
+
 
 
 	#txtAstro1{
 
-		font-size: 25px;
+		font-size: 28px;
 		width: 100%;
-		margin-right: 35%;
-		margin-top: 8%;
+		margin-right: 55%;
+		margin-top: 58%;
 
 	}
 
@@ -488,7 +479,6 @@ li{
 
 		width: 50%;
 		margin-left: 20%;
-		margin-top: 30%;
 
 	}
 
@@ -498,17 +488,13 @@ li{
 		font-size: 10px;
 
 	}
-	#main .menuBar a{ font-size: 12px; }
-	#main .menuBar{ width:60%;}
+			#main .menuBar a{ font-size: 14px; }
 	.AstroBeni{
 
 		margin-top: 95%;
 		margin-right: 10%;
 
 		}
-
-		.sidenav .closebtn { top: 8%; }
-
 }
 @media only screen and (max-width:500px) {
   /* For mobile phones: */
@@ -520,15 +506,15 @@ li{
 
 	.slideshow-continer { width: 60%; }
 	#txtAstro{ font-size: 25px; }
-	.over{ left: 55%; margin-top: 5%;width:52%; }
+	.over{ left: 55%; margin-top: 5%;}
 
 
 	#txtAstro1{
 
-		font-size: 25px;
+		font-size: 28px;
 		width: 100%;
-		margin-right: 35%;
-		margin-top: 8%;
+		margin-right: 55%;
+		margin-top: 55%;
 
 	}
 
@@ -536,7 +522,6 @@ li{
 
 		width: 50%;
 		margin-left: 20%;
-		margin-top: 30%;
 
 	}
 
@@ -558,7 +543,5 @@ li{
 			font-size: 10px;
 		}
 		#main .menuBar a{ font-size: 14px; }
-		#main .menuBar{ width:35 }
-		.sidenav .closebtn { top: 8%; }
 
 }
