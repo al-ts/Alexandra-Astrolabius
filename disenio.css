@@ -1,550 +1,92 @@
-@charset "UTF-8";
-/* CSS Document */
-
-
-body{
-
-	/*font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-	font-family: 'Raleway', sans-serif;
-	color: white;
-	 background-color: black;
-	 height: 100%;
- 	margin: 0;
-	
+body {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color: black;
+    min-height: 100vh; /* Cambio de height: 100% */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
-::-webkit-scrollbar {
-    display: none;
-}
+
 #contenedor {
-
-	background-image: url("material/fnd.jpg");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-	width: 100%; margin:0 auto;
-	position: absolute;
-	animation-name: bkGrnd;
-	animation-duration: 1s;
-	animation-timing-function: ease;
-
+    background-image: url("material/fnd.jpg");
+    min-height: 100vh; /* Cambio de height: 100% */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: 0 auto;
+    position: relative; /* Cambio de absolute */
+    animation: bkGrnd 1s ease;
 }
+
 @keyframes bkGrnd {
-  from {width: 95%;}
-  to {width: 100%;}
+    from { width: 95%; }
+    to { width: 100%; }
 }
-/*MENU*/
 
-#astrolabiusAl{
-	width: 95%;
-	margin-top: 35%;
-
-}
 .sidenav {
-
-  height: 95%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  background-color: #0a0a0a;
-  overflow-x: hidden;
-  transition: 0.2s;
+    height: 95%;
+    width: auto; /* Evita que se colapse */
+    position: fixed;
+    left: 0;
+    background-color: #0a0a0a;
+    overflow-x: hidden;
+    transition: 0.3s;
 }
-.sidenav img{
-
-	width: 50%;
-	margin-left: 10%;
-
-}
-.sidenav p{
-
-	text-align: center;
-	color: #b6b6b6;
-
- }
-
-.sidenav h1{
-
-	font-size: 27px;
-	color: #b3b3b3;
-	text-align: center;
-	font-family: 'Sacramento', cursive;
-	font-weight: lighter;
-	width: 100%;
-	margin: 0 0 0 3%;
- }
 
 .sidenav a {
-
-  padding: 8px 8px 8px 8px;
-  text-decoration: none;
-  font-size: 25px;
- 	color: #818181;
-  display: block;
-  transition: 0.3s;
-	margin-top: 1%;
-	text-align: center;
-
-}
-
-
-.bandcamp{
-
-	display: block;
-	overflow: hidden;
-	position: relative;
-	margin-top:8%;
-	width: 100%;
-	background-color: #272727;
-	opacity: 0.8;
-
-}
-
-.otros{
-
-	display: block;
-	overflow: hidden;
-	width: 100%;
-	position: relative;
-	margin-top:8%;
-	background-color: #272727;
-	opacity: 0.8;
-
+    display: block;
+    padding: 10px;
+    font-size: 22px;
+    color: #818181;
+    text-align: center;
+    transition: 0.3s;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+    color: #f1f1f1;
 }
 
-.sidenav .closebtn {
-
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-
+#txtAstro1 {
+    font-size: 40px; /* Ajuste para pantallas pequeñas */
+    text-align: right;
+    margin: 10px auto;
 }
 
+@media (max-width: 800px) {
+    #main {
+        width: 100%;
+        padding: 0;
+    }
 
-#main .menuBar a{
+    .content, .proyectos, .AstroBeni {
+        width: 100%;
+    }
 
-	font-size: 22px;
-	color:#9b97aa;
-	margin-left: 3%;
-	cursor: pointer;
- }
+    #txtAstro {
+        font-size: 25px;
+    }
 
-#main .menuBar:hover {
-
-color: #bfbbcb;
-cursor: pointer;
-
+    #txtAstro1 {
+        font-size: 28px;
+        width: 100%;
+        text-align: center;
+    }
 }
 
-#main {
-
-  transition: margin-left .3s;
-  padding: 16px;
-
-}
-#main .proyTit h2{
-
-	float:right; margin-right: 10%;
-	font-size: 18px;
-	color:#9b97aa;
-
-}
-/*
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}*/
-
-/*FIN MENU*/
-
-#contenido {
-
-	margin-bottom: 0;
-	/*width: 100%;*/
-	margin-top: 10%;
-	height: auto;
-
-}
-
-/*INDEX--------*/
-#main1 {
-
-  transition: margin-left .5s;
-  padding: 0;
-	width: 50%;
-	margin-left: 38%;
-	margin-top: 8%;
-
-}
-
-.AstroBeni{
-
-	position: relative;
-	display: block;
-	width:45%;
-	height:auto;
-	animation-name: main;
-	animation-duration: 1s;
-	animation-timing-function: ease;
-}
-
-@keyframes main {
-  from {margin-top: 25%;}
-  to {margin-top: 8%;}
-}
-.AstroBeni:hover{	opacity: .7; cursor: pointer; }
-#txtAstro1{
-
-	position: relative;
-	font-family: 'Sacramento', cursive;
-	font-size: 45px;
-	float: right;
-	margin-right: 110%;
-	margin-top: 1%;
-	width: 50%;
-}
-
-
-/*FIN INDEX-------*/
-
-#txtAstro{
-
-	position: relative;
-	font-family: 'Sacramento', cursive;
-	font-size:2em;
-	margin-left: 1%;
-	margin-bottom: 5%;
-
-}
-
-.AstrolabiusTxt{
-
-	font-size: 10px;
-	margin: 0;
-	width: 70%;
-
-}
-
-.over{
-
-	position: relative;
-	display: block;
-	text-align: justify;
-	font-size: 2em;
-	width: 110%;
-	height: auto;
-  left: 39%;
-	top:0;
-	animation-name: ovr;
-	animation-duration: 1s;
-	animation-timing-function: ease;
-}
-@keyframes ovr {
-  from {left: 2%;	}
-  to {left: 39%;}
-}
-.over:hover{ cursor: pointer;}
-.beni{
-
-	font-size: 12px;
-	position: relative;
-	border-width: 1px;
-	border-style: solid;
-	border-color: white;
-/*	margin-top: 90%;*/
-	width:50%;
-	height: 50%;
-
-}
-
-/*BOTONES PROYECTO*/
-
-.showProyectos {
-
-  cursor: pointer;
-  padding: 25px;
-  width: 100%;
-  border: none;
-  text-align: center;
-  font-size: 35px;
-	outline: none;
-	font-size: 15px;
-	transition: 0.4s;
-	background-color: black;
-	color: white;
-	opacity: 0.6;
-	/*border: 1px solid;
-	border-color: #b6b6b6;*/
-
-}
-
-.showProyectos:after {
-
- content: '\002B';/* Unicode character for "plus" sign (+) */
- font-weight: bold;
- margin-left: 5px;
-
-}
-
-.active:after { content: "\2212"; /* Unicode character for "minus" sign (-) */ }
-
-/*STORM*/
-
-
-.proyectos{
-
-	padding: 0 18px;
-	width:90%;
-	height: 80%;
-	text-align:center;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease-out;
-	margin-right: auto;
-	margin-bottom: 0.3%;
-	margin-left: 5%;
-
-
-}
-
-.proyectos .materialV{
-
-	width: 100%;
-	height: 515px;
-	position: relative;
-
-}
-
-/*UCH*/
-* {
-  box-sizing: border-box;
-}
-
-.content {
-
-  background: rgba(0, 0, 0, 0.4);
-  color: #f1f1f1;
-  width: 100%;
-	height: auto;
-	overflow:hidden;
-	float:right;
-	top:30%;
-	text-align: justify;
-	font-size: 18px;
-	padding: 1%;
-
-}
-
-
-.active, .showProyectos:hover {
-
- opacity: 1;
- background-color: black;
-
-}
-
-/*CONTACTO*/
-
-* {
-
-  box-sizing: border-box;
-}
-
-h2{
-
-	text-align: center;
-	display: block;
-	width: 12%;
-	margin-left: 88%;
-	color: #726d7f;
-	text-decoration: overline;
-	font-family: 'Montserrat', sans-serif;
-
-}
-
-.footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   color: white;
-	 opacity: 0.2;
-   text-align: center;
-}
-
-/* BONUS TACK */
-
-.header {
-  text-align: center;
-  padding: 32px;
-}
-
-.row {
-  display: -ms-flexbox; /* IE 10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE 10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-	position: relative;
-}
-
-/* Create two equal columns that sits next to each other */
-.column {
-  -ms-flex: 50%; /* IE 10 */
-  flex: 50%;
-  padding: 0 4px;
-
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-
-}
-
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 10px 16px;
-  background-color: #f1f1f1;
-  cursor: pointer;
-  font-size: 18px;
-}
-
-.btn:hover {
-  background-color: #ddd;
-}
-
-.btn.active {
-  background-color: #666;
-  color: white;
-}
-
-/*--------*/
-
-a{
-	list-style:none;
-	text-decoration:none;
-	color: white;
-
-}
-
-li{
-
-	list-style:none;
-	text-decoration:none;
-	color: white;
-
-}
-
-@media only screen and (max-width:800px) {
-  /* For tablets: */
-  #main {
-    width: 100%;
-    padding: 0;
-  }
-
-	.materialV{
-
-		width:600px;
-		height:415px;
-
-	}
-#txtAstro{
-		font-size: 25px;
-}
-	.content, 	.proyectos, .slideshow-continer, .AstroBeni{
-		width: 100%;
-	}
-	.proyectos{ 	margin-left: 0; }
-	.over{ left: 55%; margin-top: 5%; }
-
-
-
-	#txtAstro1{
-
-		font-size: 28px;
-		width: 100%;
-		margin-right: 55%;
-		margin-top: 58%;
-
-	}
-
-	#main1{
-
-		width: 50%;
-		margin-left: 20%;
-
-	}
-
-	#main .proyTit h2{
-
-		margin-right: 10%;
-		font-size: 10px;
-
-	}
-			#main .menuBar a{ font-size: 14px; }
-	.AstroBeni{
-
-		margin-top: 95%;
-		margin-right: 10%;
-
-		}
-}
-@media only screen and (max-width:500px) {
-  /* For mobile phones: */
-  .menu, .main, .content, .proyectos, .AstroBeni {
-    width: 100%;
-  }
-	.proyectos{	margin-left: 0;}
-	.materialV{ height: 315px; width: 100%;}
-
-	.slideshow-continer { width: 60%; }
-	#txtAstro{ font-size: 25px; }
-	.over{ left: 55%; margin-top: 5%;}
-
-
-	#txtAstro1{
-
-		font-size: 28px;
-		width: 100%;
-		margin-right: 55%;
-		margin-top: 55%;
-
-	}
-
-	#main1{
-
-		width: 50%;
-		margin-left: 20%;
-
-	}
-
-	.AstroBeni{
-
-		margin-top: 70%;
-		margin-right: 10%;
-
-		}
-		.otros{ margin-top: 3%; background-color: #272727; opacity: 0.8;}
-		.bandcamp{ margin-top: 3%; background-color: #272727;opacity: 0.8;}
-		.sidenav .otros, .sidenav .bandcamp { font-size: 15px;}
-
-		h2{ margin-left:68%; font-size: 15px;}
-
-		#main .proyTit h2{
-
-			margin-right: 10%;
-			font-size: 10px;
-		}
-		#main .menuBar a{ font-size: 14px; }
-
+@media (max-width: 500px) {
+    .menu, .main, .content, .proyectos {
+        width: 100%;
+    }
+
+    .materialV {
+        height: 315px;
+        width: 100%;
+    }
+
+    #txtAstro1 {
+        font-size: 24px;
+        text-align: center;
+    }
 }
