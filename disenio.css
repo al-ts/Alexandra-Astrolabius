@@ -202,12 +202,11 @@ cursor: pointer;
 .AstroBeni:hover{	opacity: .7; cursor: pointer; }
 #txtAstro1{
 
-	position: relative;
+	position: absolute;
 	font-family: 'Sacramento', cursive;
 	font-size: 45px;
 	float: right;
-	margin-right: 110%;
-	margin-top: 1%;
+	right: 10%;
 	width: 50%;
 }
 
